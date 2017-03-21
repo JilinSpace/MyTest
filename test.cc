@@ -33,5 +33,5 @@ int main()
     Test a2;
     FT ft2 = std::bind(&Test::show, &a2, placeholders::_1);
     ft2(232343);
-	return 0;
+    return 0;
 }
