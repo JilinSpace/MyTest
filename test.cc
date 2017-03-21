@@ -1,13 +1,19 @@
 #include <iostream>
+#include <functional>
+using namespace std;
 
+typedef std::function<void(int)> FT;
+
+void incre(int& a)
+{
+    a = a+100;
+}
 
 int main()
 {
-	for(int i=0; i<10; i++)
-	{
-        std::cout<<i+2<<std::endl;
-		std::cout<<i<<std::endl;
-	}
-//    fdsfds
+    int a = 1;
+    auto ft = std::bind(&incre, placeholders::_1);
+    ft(a);
+    std::cout<<a<<std::endl;
 	return 0;
 }
