@@ -9,6 +9,5 @@ int main()
 		std::cout<<i<<std::endl;
 	}
 //    fdsfds
-//    new test
 	return 0;
 }
