@@ -1,3 +1,9 @@
+/*********************************/
+//使用C++ 11 bind function特性
+//将模板用到 std::function 中，使std::function 支持模板。
+/*********************************/
+
+
 #include <functional>
 #include <iostream>
 using namespace std;
