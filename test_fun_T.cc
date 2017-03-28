@@ -41,7 +41,7 @@ public:
     T1 Show(T1 x, T2 y)
     {
         //std::cout<< x <<"\t"<< y <<std::endl;
-        return 0;
+        return x+y;
     }
 
     typename FunctionType<T1, T2>::Type _temp_func;
